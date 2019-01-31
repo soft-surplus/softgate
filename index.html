@@ -15,11 +15,14 @@
         /* max-height: 20vw; */
       }
       .collection {
-        max-width: 1000px; 
+        overflow-x: scroll;
       }
-      .portalIntro {background-color: #FFC864;}
       
-      section:before {
+      .portalPrompt {background-color: #FFC864;}
+      .portalFeeds {background-color: #64E178;}
+      .portalInhabitants {background-color: #A5E6F0;}
+      
+      .blur {
         -webkit-filter: blur(100px);
         -moz-filter: blur(100px);
         -o-filter: blur(100px);
@@ -27,9 +30,6 @@
         filter: blur(100px);" 
       }
     </style>
-    
-    <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
   </head>
   
   <body>
@@ -43,15 +43,13 @@
     
     <!--  RANDOM PROMPT/QUESTION/FORTUNE SECTION  -->
     <section class="portalPrompt">
-      <div>
         <p class="promptText">How are ya feeling today?</p>
         <div class="promptInterface">Option 1 ... Option 2 ... Option 3</div>
-      </div>
     </section>
     <br>
     
     <!--  FEEDS WE'RE USING SECTION  -->
-    <section class="portalFeeds" style="background-color: #64E178;">
+    <section class="portalFeeds">
       <p>Latest from our Instagram</p>
       <img alt="ibm" src="https://d2w9rnfcy7mm78.cloudfront.net/2361041/large_daa956dec4972ecef29c991ae86b1f38.png?1530087387">
       <img alt="maybe clothing and open sesam" src="https://d2w9rnfcy7mm78.cloudfront.net/2734371/large_24d2526d72e8f4b8a5f91bf1e468787e.jpg?1537383387">
@@ -63,7 +61,7 @@
     <br>
     
     <!--  INHABITANT UPDATES AND OTHER DYNAMIC INFORMATION SECTION  -->
-    <section class="portalInhabitants" style="background-color: #A5E6F0;">
+    <section class="portalInhabitants">
       <p>Latest Inhabitant News</p>
       <p>The monstera, snake plant, and hanging plant B have been watered by someone 7.2 minutes ago. Hot water was last prepared 4.4 hours ago. The bathroom has 3 notes added to it since yesterday. The recycling and trash containers want to remind everyone to empty them by 4pm.</p>
       <p>That’s all! Have a beautiful afternoon.</p>
